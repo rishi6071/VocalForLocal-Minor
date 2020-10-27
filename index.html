@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- fontawesome cdn  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+  <title>Indian Product | Vocal for Local</title> 
+</head>
+
+<body>
+  <div class="header">
+    <div class="container-fluid">
+      <div class="navigationbar">
+        <div class="logo">
+          <img src="images/madeinindia.png" width="100px">
+        </div>
+        <nav>
+          <ul id="menu-item">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Product</a></li>
+            <li><a href="productdetail.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="register.html">Login/Signup</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+      <div class="my-row">
+        <div class="my-col-2">
+          <h1 class="my-h1">Be Indian<br>Buy Indian</h1>
+          <p class="my-p">Buy Indian Products and support <br>the Atmanirbhar Bharat Campaign</p>
+          <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="my-col-2">
+          <img src="images/madeinindia.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Categories -->
+
+  <div class="categories">
+    <div class="small-container">
+      <div class="my-row">
+        <div class="my-col-3">
+          <img src="images/category-1.jpg">
+        </div>
+        <div class="my-col-3">
+          <img src="images/category-2.jpg">
+        </div>
+        <div class="my-col-3">
+          <img src="images/category-3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Products  -->
+
+  <div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="my-row">
+      <div class="my-col-4 product-grid">
+        <img src="images/product-1.jpg">
+        <h4 class="my-h4">Red Printed T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 350</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-2.jpg">
+        <h4 class="my-h4">Black Shoe</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 600</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-3.jpg">
+        <h4 class="my-h4">Grey Lower</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 300</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-4.jpg">
+        <h4 class="my-h4">Polo T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 350</p>
+      </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="my-row">
+      <div class="my-col-4 product-grid">
+        <img src="images/product-5.jpg">
+        <h4 class="my-h4">Gray Shoe</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 550</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-6.jpg">
+        <h4 class="my-h4">Round neck T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 350</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-7.jpg">
+        <h4 class="my-h4">Socks</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 380</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-8.jpg">
+        <h4 class="my-h4">Watch</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 650</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-9.jpg">
+        <h4 class="my-h4">Stylish Watch</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 550</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-10.jpg">
+        <h4 class="my-h4">Round neck T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 350</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-11.jpg">
+        <h4 class="my-h4">Socks</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 380</p>
+      </div>
+      <div class="my-col-4 product-grid">
+        <img src="images/product-12.jpg">
+        <h4 class="my-h4">Watch</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <p class="my-p">&#x20B9; 650</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offer  -->
+  <div class="offer">
+    <div class="small-container">
+      <div class="my-row">
+        <div class="my-col-2">
+          <img src="images/exclusive.png" class="offer-img">
+        </div>
+        <div class="my-col-2">
+          <p class="my-p">Exclusively available on Indian Products</p>
+          <h1 class="my-h1">Smart Band 4</h1>
+          <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias voluptas magnam eum nulla, tempore
+            eaque vel natus voluptatem iste, expedita quae similique quasi sequi, voluptatibus consectetur repellendus
+            velit suscipit possimus.</small>
+          <a href="" class="btn">Buy Now &#8594</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------Testimonial-----------------  -->
+  <div class="testimonial">
+    <div class="small-container">
+      <div class="my-row">
+        <div class="my-col-3">
+          <i class="fa fa-quote-left"></i>
+          <p class="my-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error pariatur praesentium veniam in. Magni, ea
+            sapiente architecto dolor in voluptatibus mollitia alias debitis culpa tempore distinctio eos, laborum
+            voluptas maiores!</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <img src="images/user-1.png">
+          <h3 class="my-h3">Rahul Upadhyay</h3>
+        </div>
+        <div class="my-col-3">
+          <i class="fa fa-quote-left"></i>
+          <p class="my-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error pariatur praesentium veniam in. Magni, ea
+            sapiente architecto dolor in voluptatibus mollitia alias debitis culpa tempore distinctio eos, laborum
+            voluptas maiores!</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <img src="images/user-2.png">
+          <h3 class="my-h3">Rishabh Vyas</h3>
+        </div>
+        <div class="my-col-3">
+          <i class="fa fa-quote-left"></i>
+          <p class="my-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error pariatur praesentium veniam in. Magni, ea
+            sapiente architecto dolor in voluptatibus mollitia alias debitis culpa tempore distinctio eos, laborum
+            voluptas maiores!</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <img src="images/user-3.png">
+          <h3 class="my-h3">Rishi Soni</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------Brands----------------------  -->
+  <div class="brands">
+    <div class="small-container">
+      <div class="my-row">
+        <div class="my-col-5">
+          <img src="images/logo-godrej.png">
+        </div>
+        <div class="my-col-5">
+          <img src="images/logo-oppo.png">
+        </div>
+        <div class="my-col-5">
+          <img src="images/logo-coca-cola.png">
+        </div>
+        <div class="my-col-5">
+          <img src="images/logo-paypal.png">
+        </div>
+        <div class="my-col-5">
+          <img src="images/logo-philips.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------Footer-------------- -->
+  <div class="footer">
+    <div class="my-container">
+      <div class="my-row">
+        <div class="footer-col-1">
+          <h3 class="my-h3">Download Our App</h3>
+          <p class="my-p">Downlioad app for android device</p>
+          <div class="app-logo">
+            <img src="images/play-store.png">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/madeinindia.png" width="100px">
+          <p class="my-p">Made in India, Indian Products Vocal for local web app</p>
+        </div>
+        <div class="footer-col-3">
+          <h3 class="my-h3">Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3 class="my-h3">Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="my-p copyright">Copyright 2020 - Indian Products</p>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <script src="main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

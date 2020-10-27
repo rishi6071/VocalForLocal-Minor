@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* --- Common  --- */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+::placeholder {
+    color:rgba(128,128,128,0.8) !important;
+}
+
+label {
+    color: grey;
+    font-size: 15px !important;
+    margin-bottom: -5px !important;
+}
+
+textarea {
+    font-size: 15px !important;
+}
+
+label.custom-control-label {
+    color: black;
+}
+
+.active {
+    color: rebeccapurple !important;
+}
+
+/* --- Quick Links --- */
+.section_heading {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #006064 !important;
+}
+
+.quick__links a {
+    color: black;
+    line-height: 2.5;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.quick__links a:hover {
+    color: rebeccapurple;
+}
+
+.quick__links li {
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 767px) {
+    .quick__links li {
+        list-style-type: none;
+    }
+
+    label {
+        justify-content: left !important;
+    }
+
+    .section_heading {
+        text-align: center;
+    }
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-variant: small-caps;
+    background: #00838f;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background: #006064;
+}
+
+input, select, textarea {
+    border-radius: 0 !important;
+    border: 1.35px solid rgba(0,0,0,0.15) !important;
+}
+
+
+/* --- Business Signup Page --- */
+.business__form__body {
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px lightgrey;
+    box-shadow: 0px 0px 15px lightgrey;
+}
+
+.business__form__heading {
+    color: #00838f;
+    font-weight: bold;
+}
+
+.business__form__heading span {
+    padding-right: 60px;
+    padding-bottom: 7px;
+    border-bottom: 3.5px solid grey;
+}
+
+@media screen and (max-width: 576px) {
+    .business__form__heading {
+        text-align: center;
+    }
+
+    .business__form__heading span {
+        padding-right: 0px;
+        padding-bottom: 4px;
+        border-bottom: 3px solid grey;
+    }
+}
+
+.business__form__save__btn,
+.business__form__cancel__btn {
+    float: right;
+    margin-left: 5px;
+    color: white !important;
+    transition: 0.5s;
+    font-size: 0.88em;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .business__form__save__btn,
+    .business__form__cancel__btn {
+        float: left;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}
+
+.business__form__save__btn {
+    background-color: #00838f !important;
+}
+
+.business__form__cancel__btn {
+    background-color: #ec407a !important;
+}
+
+.business__form__save__btn:hover {
+    background: #006064;
+    color: white;
+}
+
+.business__form__cancel__btn:hover {
+    background: #c2185b;
+    color: white;
+}
+
+/* --- Seller Products Page --- */
+.dashboard-table thead th,
+.dashboard-table thead td {
+    color: #006064;
+    font-weight: 500 !important;
+}
+
+.dashboard-table img {
+    width: 160px;
+    height: auto;
+}
+
+.dashboard-table input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 1em;
+    border: 1px solid #006064 !important;
+}
+
+@media screen and (max-width: 700px) {
+    .dashboard-table tbody {
+        font-size: 0.8em;
+    }
+}
+
+.bg-light {
+    background: rgba(128,128,128, 0.15) !important;
+}

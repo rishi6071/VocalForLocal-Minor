@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Indian Product | My Products</title>
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/business.css">
+</head>
+
+<body>
+    <!-- --------------Header-------------- -->
+    <div class="container-fluid bg-light">
+        <div class="navigationbar">
+            <div class="logo">
+                <img src="images/madeinindia.png" width="100px">
+            </div>
+            <nav>
+                <ul id="menu-item">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="productdetail.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="register.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- --------------Business Account Dashboard-------------- -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-3 bg-light pt-3">
+                <div class="py-4">
+                    <h4 class="section_heading mb-3">Quick Links</h4>
+                    <ul class="quick__links ml-4">
+                        <li><a href="business_account.html">My Account</a></li>
+                        <li><a href="product_register.html">Register New Item</a></li>
+                        <li><a href="seller_products.html" class="active">Product Registered</a></li>
+                        <li><a href="ongoing_orders.html">Ongoing Orders</a></li>
+                        <li><a href="past_orders.html">Past Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Products Details -->
+            <div class="col-lg-10 col-md-9 pt-3 pb-lg-5 pb-4">
+                <h4 class="section_heading mb-5 mt-4">REGISTERED PRODUCTS</h4>
+
+                <!-- Registered Products Table -->
+                <div class="table-responsive px-3 dashboard-table">
+                    <table class="table text-center table-fit">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="align-middle">Product Image</th>
+                                <th scope="col" class="align-middle">Product Name</th>
+                                <th scope="col" class="align-middle">Product Price</th>
+                                <th scope="col" class="align-middle">Stock (in pcs.)</th>
+                                <th scope="col" class="align-middle">Registered Date</th>
+                                <th scope="col" class="align-middle">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <img src="images/product-3.jpg" class="img-fluid" alt="Product Registered" />
+                                </th>
+                                <td class="align-middle">Grey Lower</td>
+                                <td class="align-middle">Rs. 300</td>
+                                <td class="align-middle">
+                                    <input type="number" value="20" min="0" />
+                                </td>
+                                <td class="align-middle">27/10/2020</td>
+                                <td class="align-middle">
+                                    <button class="btn btn-secondary p-0 px-2" title="Remove Product">x</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img src="images/product-2.jpg" class="img-fluid" alt="Product Registered" />
+                                </th>
+                                <td class="align-middle">Black Sport Shoes</td>
+                                <td class="align-middle">Rs. 600</td>
+                                <td class="align-middle">
+                                    <input type="number" value="12" min="0" />
+                                </td>
+                                <td class="align-middle">27/10/2020</td>
+                                <td class="align-middle">
+                                    <button class="btn btn-secondary p-0 px-2" title="Remove Product">x</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img src="images/product-4.jpg" class="img-fluid" alt="Product Registered" />
+                                </th>
+                                <td class="align-middle">Dark Bluish Polo T-Shirt</td>
+                                <td class="align-middle">Rs. 350</td>
+                                <td class="align-middle">
+                                    <input type="number" value="15" min="0" />
+                                </td>
+                                <td class="align-middle">27/10/2020</td>
+                                <td class="align-middle">
+                                    <button class="btn btn-secondary p-0 px-2" title="Remove Product">x</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img src="images/product-8.jpg" class="img-fluid" alt="Product Registered" />
+                                </th>
+                                <td class="align-middle">Black Metallic Stylish Watch</td>
+                                <td class="align-middle">Rs. 650</td>
+                                <td class="align-middle">
+                                    <input type="number" value="8" min="0" />
+                                </td>
+                                <td class="align-middle">27/10/2020</td>
+                                <td class="align-middle">
+                                    <button class="btn btn-secondary p-0 px-2" title="Remove Product">x</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --------------Footer-------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Downlioad app for android device</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/madeinindia.png" width="100px">
+                    <p>Made in India, Indian Products Vocal for local web app</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Indian Products</p>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

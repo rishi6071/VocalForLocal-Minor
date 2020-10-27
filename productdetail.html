@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <title>All Products - Indian Product | Vocal for Local</title>
+    <link rel="stylesheet" href="css/business.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-light">
+        <div class="navigationbar">
+            <div class="logo">
+                <img src="images/madeinindia.png" width="100px">
+            </div>
+            <nav>
+                <ul id="menu-item">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="productdetail.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="register.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- Single product Detail  -->
+
+    <div class="small-container single-product">
+        <div class="my-row">
+            <div class="my-col-2">
+                <img src="images/gallery-1.jpg" width="100%" id="productImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" class="smallImg">
+                    </div>
+                </div>
+
+            </div>
+            <div class="my-col-2">
+                <p class="my-p">Home / T-Shirt</p>
+                <h1 class="my-h1">Red Printed T-Shirt by Rishabh</h1>
+                <h4 class="my-h4">&#8377; 350</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>S</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+                <h3 class="my-h3">Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p class="my-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nostrum commodi, eaque ea, nihil
+                    aspernatur sed, harum laudantium accusantium rerum odio voluptate? Excepturi facilis vero nihil
+                    voluptas maiores accusamus voluptate!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- title -->
+    <div class="small-container">
+        <div class="my-row row-2">
+            <h2 class="my-h2">Related Products</h2>
+            <p class="my-p">View more</p>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="my-row">
+            <div class="my-col-4 product-grid">
+                <img src="images/product-1.jpg">
+                <h4 class="my-h4">Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="my-p">&#x20B9; 350</p>
+            </div>
+            <div class="my-col-4 product-grid">
+                <img src="images/product-2.jpg">
+                <h4 class="my-h4">Black Shoe</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="my-p">&#x20B9; 600</p>
+            </div>
+            <div class="my-col-4 product-grid">
+                <img src="images/product-3.jpg">
+                <h4 class="my-h4">Grey Lower</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="my-p">&#x20B9; 300</p>
+            </div>
+            <div class="my-col-4 product-grid">
+                <img src="images/product-4.jpg">
+                <h4 class="my-h4">Polo T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p class="my-p">&#x20B9; 350</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- --------------Footer-------------- -->
+    <div class="footer">
+        <div class="my-container">
+            <div class="my-row">
+                <div class="footer-col-1">
+                    <h3 class="my-h3">Download Our App</h3>
+                    <p class="my-p">Downlioad app for android device</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/madeinindia.png" width="100px">
+                    <p class="my-p">Made in India, Indian Products Vocal for local web app</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3 class="my-h3">Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3 class="my-h3">Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="my-p copyright">Copyright 2020 - Indian Products</p>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
