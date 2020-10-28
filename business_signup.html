@@ -20,14 +20,6 @@
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/business.css">
-
-    <style>
-        
-    </style>
-
-    <script>
-        
-    </script>
 </head>
 
 <body>
@@ -49,6 +41,14 @@
             <img src="images/cart.png" width="30px" height="30px">
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
+    </div>
+
+    <!-- Alert for Confirmation of Process -->
+    <div class="alert alert-success mt-1 mx-2 alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
 
     <!-- Seller Registration / Login Option Section -->
@@ -99,7 +99,8 @@
 
                             <!-- Password -->
                             <div class="form-group row">
-                                <label for="business_signup_password" class="col-lg-4 text-lg-right col-form-label">Password :
+                                <label for="business_signup_password"
+                                    class="col-lg-4 text-lg-right col-form-label">Password :
                                     <span class="text-danger" id="business_signup_password_req">*</span>
                                 </label>
                                 <div class="col-lg-8">
@@ -124,7 +125,8 @@
 
                             <!-- Service Category -->
                             <div class="form-group row">
-                                <label for="service_category" class="col-lg-4 text-lg-right col-form-label">Service Category :
+                                <label for="service_category" class="col-lg-4 text-lg-right col-form-label">Service
+                                    Category :
                                     <span class="text-danger" id="service_category_req">*</span>
                                 </label>
                                 <div class="col-lg-8 input-group" id="service_category_list">
@@ -140,7 +142,8 @@
 
                             <!-- Mobile Number -->
                             <div class="form-group row">
-                                <label for="contact_number" class="col-lg-4 text-lg-right col-form-label">Mobile Number :
+                                <label for="contact_number" class="col-lg-4 text-lg-right col-form-label">Mobile Number
+                                    :
                                     <span class="text-danger" id="contact_number_req">*</span>
                                 </label>
                                 <div class="col-lg-8 input-group">
@@ -155,7 +158,8 @@
 
                             <!-- Whatsapp Number -->
                             <div class="form-group row">
-                                <label for="whatsapp_number" class="col-lg-4 text-lg-right col-form-label">Whatsapp Number :
+                                <label for="whatsapp_number" class="col-lg-4 text-lg-right col-form-label">Whatsapp
+                                    Number :
                                     <span class="text-danger" id="whatsapp_number_req">*</span>
                                 </label>
                                 <div class="col-lg-8">
@@ -183,7 +187,8 @@
 
                             <!-- Serviceable Area -->
                             <div class="form-group row">
-                                <label for="service_area" class="col-lg-4 text-lg-right col-form-label">Serviceable Area (km):
+                                <label for="service_area" class="col-lg-4 text-lg-right col-form-label">Serviceable Area
+                                    (km):
                                     <span class="text-danger" id="service_area_req">*</span>
                                 </label>
                                 <div class="col-lg-8">
@@ -194,7 +199,8 @@
 
                             <!-- Service Description -->
                             <div class="form-group row">
-                                <label for="service_description" class="col-lg-4 text-lg-right col-form-label">Service Description:
+                                <label for="service_description" class="col-lg-4 text-lg-right col-form-label">Service
+                                    Description:
                                     <span class="text-danger" id="service_description_req">*</span>
                                 </label>
                                 <div class="col-lg-8">
@@ -260,7 +266,8 @@
 
                             <!-- Mobile Number -->
                             <div class="form-group row">
-                                <label for="login_contact_number" class="col-lg-4 text-lg-right col-form-label">Mobile Number :
+                                <label for="login_contact_number" class="col-lg-4 text-lg-right col-form-label">Mobile
+                                    Number :
                                     <span class="text-danger" id="login_contact_number_req">*</span>
                                 </label>
                                 <div class="col-lg-8 input-group">
@@ -275,7 +282,8 @@
 
                             <!-- Password -->
                             <div class="form-group row">
-                                <label for="business_login_password" class="col-lg-4 text-lg-right col-form-label">Password :
+                                <label for="business_login_password"
+                                    class="col-lg-4 text-lg-right col-form-label">Password :
                                     <span class="text-danger" id="business_login_password_req">*</span>
                                 </label>
                                 <div class="col-lg-8">
@@ -341,10 +349,11 @@
 
     <!-- Optional JavaScript -->
     <script src="main.js"></script>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 
