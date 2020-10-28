@@ -46,3 +46,26 @@ smallImg[2].onclick = () =>
     productImg.src = smallImg[2].src;
 smallImg[3].onclick = () => 
     productImg.src = smallImg[3].src;
+
+// Business Login Signup Switching
+function businessLoginSignup(target) {
+
+    if (target === "signup") {
+        document.querySelector('#business_login_section').style.display = "none";
+        document.querySelector('#business_login_link').style.borderBottom = "none";
+        document.querySelector('#business_login_link').style.color = "#00838f";
+
+        document.querySelector('#business_signup_section').style.display = "block";
+        document.querySelector('#business_signup_link').style.borderBottom = "3px solid grey";
+        document.querySelector('#business_signup_link').style.color = "rebeccapurple";
+    }
+    else if (target === "login") {
+        document.querySelector('#business_signup_section').style.display = "none";
+        document.querySelector('#business_signup_link').style.borderBottom = "none";
+        document.querySelector('#business_signup_link').style.color = "#00838f";
+
+        document.querySelector('#business_login_section').style.display = "block";
+        document.querySelector('#business_login_link').style.borderBottom = "3px solid grey";
+        document.querySelector('#business_login_link').style.color = "rebeccapurple";
+    }
+}

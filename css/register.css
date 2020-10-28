@@ -15,6 +15,7 @@ body {
     float: right;
     padding: 5px 4%;
     cursor: pointer;
+    color: grey;
 }
 
 .dismiss-button:hover {
@@ -158,4 +159,5 @@ a.forget-password:hover {
 
 .business_acc_btn:hover {
     background: #37474f;
+    color: white;
 }

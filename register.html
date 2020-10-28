@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <title>All Products - Indian Product | Vocal for Local</title>
 </head>
@@ -32,11 +33,12 @@
 
         <form action="#" name="login_form" class="login-form">
             <div class="form-group">
-                <input type="mail" name="login_email_address" id="login_email_address" placeholder="Email Address..."
+                <input type="email" name="login_email_address" id="login_email_address" placeholder="Email Address..."
                     required />
             </div>
             <div class="form-group">
-                <input type="password" name="login_password" id="login_password" placeholder="Password..." required />
+                <input type="password" name="login_password" id="login_password" minlength="6" placeholder="Password..."
+                    required />
             </div>
             <div class="form-group">
                 <a href="#" class="forget-password">Forget Password?</a>
@@ -58,15 +60,16 @@
                 <input type="text" name="signup_username" id="signup_username" placeholder="Your Name..." required />
             </div>
             <div class="form-group">
-                <input type="tel" name="signup_mobile_number" id="signup_mobile_number" placeholder="Mobile Number..."
-                    minlength="10" maxlength="10" required />
+                <input type="tel" name="signup_mobile_number" id="signup_mobile_number"
+                    placeholder="10 Digit Mobile Number..." value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
             </div>
             <div class="form-group">
-                <input type="mail" name="signup_email_address" id="signup_email_address" placeholder="Email Address..."
+                <input type="email" name="signup_email_address" id="signup_email_address" placeholder="Email Address..."
                     required />
             </div>
             <div class="form-group">
-                <input type="password" name="signup_password" id="signup_password" placeholder="Password..." required />
+                <input type="password" name="signup_password" id="signup_password" placeholder="Password..."
+                    minlength="6" required />
             </div>
             <div class="form-group">
                 <button type="submit" class="login-signup-button">Sign Up</button>
