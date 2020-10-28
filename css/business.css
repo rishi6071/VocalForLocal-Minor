@@ -27,11 +27,12 @@ label.custom-control-label {
     color: rebeccapurple !important;
 }
 
+
 /* --- Quick Links --- */
 .section_heading {
     font-weight: 500;
     font-size: 1.4rem;
-    color: #006064 !important;
+    color: #00695c !important;
 }
 
 .quick__links a {
@@ -151,6 +152,7 @@ input, select, textarea {
     color: white;
 }
 
+
 /* --- Seller Products Page --- */
 .dashboard-table thead th,
 .dashboard-table thead td {
@@ -178,5 +180,82 @@ input, select, textarea {
 }
 
 .bg-light {
-    background: rgba(128,128,128, 0.15) !important;
+    background: #e0f2f1 !important;
+}
+
+
+/* --- Ongoing Orders Page & Past Orders Page --- */
+.table_grid1,
+.table_grid2 {
+    background: #b2dfdb;
+    border: 2.5px solid #006064;
+}
+
+@media screen and (min-width: 992px) {
+    .table_grid1 {
+        border-right: none;
+    }
+
+    .table_grid2 {
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .table_grid1 {
+        border-bottom: none;
+    }
+
+    .table_grid2 {
+        border-top: none;
+    }
+}
+
+.orders_table_head {
+    padding: 12px;
+    letter-spacing: 0.7px;
+    background: #006064;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .orders_table_head {
+        padding: 12px 5px;
+    }
+}
+
+.orders_table td {
+    font-size: 13px;
+    padding: 8px 8px;
+}
+
+@media screen and (max-width: 991px) {
+    .orders_table td {
+        padding: 5px;
+    }
+
+    .orders_table_head span {
+        float: right;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+}
+
+.orders_table tr:nth-of-type(2n) {
+    background: #e0f2f1;
+}
+
+.orders_table td:nth-child(3),
+.orders_table td:nth-child(4) {
+    text-align: center;
+}
+
+.order_address {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.order_address li:last-child {
+    font-weight: 600;
+    font-size: medium;
 }
