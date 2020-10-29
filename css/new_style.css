@@ -47,7 +47,7 @@ ul {
     font-size: 3em;
 }
 
-.home_banner .btn, .offer_banner .btn {
+.home_banner .btn, .offer_banner .btn, .single_product_details .btn {
     background: #138808;
     color: #fff;
     padding: 8px 30px;
@@ -56,7 +56,7 @@ ul {
     transition: 0.5s;
 }
 
-.home_banner .btn:hover, .offer_banner .btn:hover {
+.home_banner .btn:hover, .offer_banner .btn:hover, .single_product_details .btn:hover {
     background: #000080;
     color: #fff;
 }
