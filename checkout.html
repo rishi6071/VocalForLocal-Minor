@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Indian Product | Checkout</title>
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/business.css" />
+    <link rel="stylesheet" href="css/new_style.css" />
+
+    <style>
+        .checkout_sections {
+            -webkit-box-shadow: 0px 0px 5px lightgrey;
+            box-shadow: 0px 0px 5px lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- || Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/madeinindia.png" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./register.html">Login/Signup</a>
+                    </li>
+                    <li class="nav-item dropdown mt-n1">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user-circle h3"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./user_account.html">My Account</a>
+                            <a class="dropdown-item" href="./user_orders.html">My Orders</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">LOGOUT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">
+                            <img src="images/cart.png" class="mt-n2" width="30px" height="30px" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- || Page Heading -->
+    <div class="container my-4">
+        <div class="section_head">CHECKOUT</div>
+    </div>
+
+    <!-- || Checkout Content -->
+    <main>
+        <div class="container mb-5">
+            <div class="row">
+
+                <!-- || Billing Details -->
+                <div class="col-md-6 col-12 mt-5">
+                    <h5 class="mb-3 text-muted text-uppercase">Billing Details</h5>
+                    <div class="checkout_sections pt-3 pb-4">
+                        <form action="#" method="POST">
+                            <div class="form-group px-sm-4 px-3 pt-4">
+                                <label for="country">Country <span class="text-danger">*</span></label>
+                                <select class="form-control required" id="country1">
+                                    <option value="India" selected>India</option>
+                                </select>
+                            </div>
+
+                            <div class="row pt-1 px-sm-4 px-3">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="fName">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="lName">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group px-sm-4 px-3 pt-1">
+                                <label for="companyName">Company Name</label>
+                                <input type="text" class="form-control" />
+                            </div>
+
+                            <div class="form-group px-sm-4 px-3 pt-1">
+                                <label for="address1">Address <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control text-secondary" placeholder="Street Address"
+                                    required />
+
+                                <div class="form-group pt-3">
+                                    <input type="text" class="form-control text-secondary"
+                                        placeholder="Appartment, unit etc. (Optional)" />
+                                </div>
+                            </div>
+
+                            <div class="row pt-1 px-sm-4 px-3">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="state1">State / Country <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="postal">Posta / Zip <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row pt-1 px-sm-4 px-3">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="state1">Email Address <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="postal">Phone Number <span class="text-danger">*</span></label>
+                                        <input type="tel" maxlength="10" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group pt-2 px-sm-4 px-3 mb-4">
+                                <label for="orderNote">Order Notes</label>
+                                <textarea name="OrderNotes" id="orderNote" cols="30" rows="3" class="form-control"
+                                    placeholder="Write your notes here..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Coupen Code & Your Order -->
+                <div class="col-md-6 col-12 mt-5">
+
+                    <!-- Coupen Code -->
+                    <div>
+                        <h5 class="mb-3 text-muted text-uppercase">Coupen Code</h5>
+                        <div class="checkout_sections">
+                            <div class="container py-4 px-sm-4 px-3">
+                                <h6>Enter your coupen code if you have one</h6>
+                                <div class="input-group mt-3 w-75">
+                                    <input type="text" class="form-control" placeholder="Coupen Code"
+                                        aria-label="Coupen Code" aria-describedby="basic-addon2" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary rounded-0" type="button"><span
+                                                class="small">APPLY</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Your Order -->
+                    <div class="mt-5">
+                        <h5 class="mb-3 text-muted text-uppercase">Your Order</h5>
+                        <div class="checkout_sections py-2">
+                            <div class="container py-4 px-sm-4 px-3">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <th>Product</th>
+                                        <th>Total</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>RD Sharma x 1</td>
+                                            <td>Rs.650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HC Verma x 1</td>
+                                            <td>Rs.550</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chetan Bhagat Comics x 2</td>
+                                            <td>Rs.800</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Cart Subtotal</th>
+                                            <td>Rs.2000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Order Total</th>
+                                            <th>Rs.2000</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="p-3 mx-sm-5 mx-3 mb-3 border">
+                                <a href="#open" data-toggle="collapse" class="link pay">Direct Bank Transfer</a>
+                                <div class="pt-2 collapse" id="open">
+                                    <p class="text-secondary small">Make your payment directly into our bank account.
+                                        Please use your
+                                        Order ID as the payment reference. Your order won’t be shipped
+                                        until the funds have cleared in our account.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="p-3 mx-sm-5 mx-3 mb-3 border">
+                                <a href="#payPal" data-toggle="collapse" class="link pay">Paypal</a>
+                                <div class="pt-2 collapse" id="payPal">
+                                    <p class="text-secondary small">Make your payment directly into our bank account.
+                                        Please use your
+                                        Order ID as the payment reference. Your order won’t be shipped
+                                        until the funds have cleared in our account.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mx-sm-5 mx-3 mb-5">
+                                <a href="thankyou.html" class="btn btn-block btn-secondary btn-lg rounded-0">
+                                    <small class="orderBt text-white">PLACE ORDER</small>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- || Footer -->
+    <footer>
+        <div class="container-fluid pt-5 pb-4 footer_section" style="background: black;">
+            <div class="row">
+                <!-- Image -->
+                <div class="col-lg-6 col-md-6">
+                    <img src="images/madeinindia.png" />
+                    <p class="pt-4">Made in India, Indian Products Vocal for local web app</p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white pt-5">Useful Links</h3>
+
+                    <ul class="mt-3">
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="col-lg-3 col-md-6 offset-lg-0 offset-md-3">
+                    <h3 class="text-white pt-5">Follow Us</h3>
+
+                    <ul class="mt-3">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+
+                <!-- Copyright Policy -->
+                <div class="col-12 pt-4">
+                    <hr>
+                    <p class="copyright_policy">Copyright 2020 - Indian Products</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
