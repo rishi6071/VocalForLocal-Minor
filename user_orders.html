@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Indian Product | Thank You</title>
+    <title>Indian Product | My Orders</title>
 
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="css/business.css" />
@@ -49,14 +49,14 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="./register.html">Login/Signup</a>
                     </li>
-                    <li class="nav-item dropdown mt-n1">
+                    <li class="nav-item dropdown mt-n1 active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-user-circle h3"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./user_account.html">My Account</a>
-                            <a class="dropdown-item" href="./user_orders.html">My Orders</a>
+                            <a class="dropdown-item active" href="./user_orders.html">My Orders</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">LOGOUT</a>
                         </div>
@@ -71,18 +71,73 @@
         </nav>
     </header>
 
-    <!-- || Thankyou Note -->
-    <main>
-        <div class="container my-5 text-center">
-            <img src="images/right.png" alt="" width="70px" height="auto" class="d-block mx-auto" />
-            <p class="display-4 mt-3">Thank You!</p>
-            <p class="text-dark">Your Order is Successfully Placed</p>
+    <!-- || USER ORDERS -->
+    <div class="container my-5">
+        <!-- Orders Page Heading -->
+        <div class="my-5">
+            <p class="section_head">MY ORDERS</p>
+        </div>
 
-            <div class="">
-                <a href="./products.html" class="btn btn-info mt-3">Back To Shop</a>
+        <!-- Registered Products Table -->
+        <div class="container-fluid">
+            <div class="table-responsive px-3 dashboard-table">
+                <table class="table text-center table-fit">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="align-middle">Product Image</th>
+                            <th scope="col" class="align-middle">Product Name</th>
+                            <th scope="col" class="align-middle">Product Price</th>
+                            <th scope="col" class="align-middle">Quantity (in pcs.)</th>
+                            <th scope="col" class="align-middle">Order Date</th>
+                            <th scope="col" class="align-middle">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <img src="images/product-3.jpg" class="img-fluid" alt="Product Registered" />
+                            </th>
+                            <td class="align-middle">Grey Lower</td>
+                            <td class="align-middle">Rs. 300</td>
+                            <td class="align-middle">1 pcs.</td>
+                            <td class="align-middle">30/10/2020</td>
+                            <td class="align-middle font-weight-bold">Shipped</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <img src="images/product-2.jpg" class="img-fluid" alt="Product Registered" />
+                            </th>
+                            <td class="align-middle">Black Sport Shoes</td>
+                            <td class="align-middle">Rs. 600</td>
+                            <td class="align-middle">1 pcs.</td>
+                            <td class="align-middle">30/10/2020</td>
+                            <td class="align-middle font-weight-bold">Delivered</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <img src="images/product-4.jpg" class="img-fluid" alt="Product Registered" />
+                            </th>
+                            <td class="align-middle">Dark Bluish Polo T-Shirt</td>
+                            <td class="align-middle">Rs. 350</td>
+                            <td class="align-middle">1 pcs.</td>
+                            <td class="align-middle">30/10/2020</td>
+                            <td class="align-middle font-weight-bold">Dispatched</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <img src="images/product-8.jpg" class="img-fluid" alt="Product Registered" />
+                            </th>
+                            <td class="align-middle">Black Metallic Stylish Watch</td>
+                            <td class="align-middle">Rs. 650</td>
+                            <td class="align-middle">1 pcs.</td>
+                            <td class="align-middle">30/10/2020</td>
+                            <td class="align-middle font-weight-bold">Delivered</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </main>
+    </div>
 
     <!-- || Footer -->
     <footer>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Indian Product | Thank You</title>
+    <title>Indian Product | My Account</title>
 
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="css/business.css" />
@@ -46,16 +46,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./register.html">Login/Signup</a>
                     </li>
-                    <li class="nav-item dropdown mt-n1">
+                    <li class="nav-item dropdown mt-n1 active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-user-circle h3"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./user_account.html">My Account</a>
+                            <a class="dropdown-item active" href="./user_account.html">My Account</a>
                             <a class="dropdown-item" href="./user_orders.html">My Orders</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">LOGOUT</a>
@@ -71,16 +71,84 @@
         </nav>
     </header>
 
-    <!-- || Thankyou Note -->
-    <main>
-        <div class="container my-5 text-center">
-            <img src="images/right.png" alt="" width="70px" height="auto" class="d-block mx-auto" />
-            <p class="display-4 mt-3">Thank You!</p>
-            <p class="text-dark">Your Order is Successfully Placed</p>
+    <!-- || Page Heading -->
+    <div class="container mt-5">
+        <p class="section_head">My Account</p>
+    </div>
 
-            <div class="">
-                <a href="./products.html" class="btn btn-info mt-3">Back To Shop</a>
-            </div>
+    <!-- || User Account Details -->
+    <main>
+        <div class="container my-5 bg-light">
+
+            <form action="#" class="px-4 py-5">
+                <div class="mb-3">
+                    <h5>Login Contact:</h5>
+                    <p class="text-success">+91 9754370193</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                            <label for="user_name" class="text-dark">User Name</label>
+                            <input type="text" class="form-control" id="user_name" value="Rishi Soni" name="user_name"
+                                placeholder="User Name" required />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                            <label for="user_contact" class="text-dark">Contact Number / Identity</label>
+                            <input type="text" class="form-control" name="user_contact" id="user_contact"
+                                value="9754370193" title="Mobile Number Cannot be Change" placeholder="Contact Number"
+                                readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                            <label for="user_email" class="text-dark">Email Address</label>
+                            <input type="email" class="form-control" id="user_email" value="rishisoni6071@gmail.com"
+                                placeholder="example@gmail.com" name="user_email" required />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-3"></div>
+
+                    <div class="col-12 mt-3">
+                        <label for="user_address" class="text-dark mb-1">Address</label>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input type="text" id="address_street" name="address_street" class="form-control"
+                            placeholder="Street" value="" required />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input type="text" id="address_city" name="address_city" class="form-control" placeholder="City"
+                            value="" required />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input type="number" id="address_zip" name="address_zip" class="form-control"
+                            placeholder="Zip Code (6 Digits)" value="" minlength="6" maxlength="6" required />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input type="text" id="address_country" name="address_country" class="form-control"
+                            placeholder="Country" value="India" readonly />
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <input type="submit" class="btn btn-block" value="UPDATE PROFILE" />
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <input type="reset" class="btn btn-block btn-outline-info"
+                            style="border-color: #17A2B8 !important;" value="CANCEL" />
+                    </div>
+
+                </div>
+            </form>
         </div>
     </main>
 

@@ -15,11 +15,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Indian Product | Thank You</title>
+    <title>Indian Product | About US</title>
 
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="css/business.css" />
     <link rel="stylesheet" href="css/new_style.css" />
+
+    <style>
+        .about_image,
+        .our_team img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            align-items: center;
+        }
+
+        .our_team img {
+            height: 250px !important;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,13 +57,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./products.html">Shop</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./register.html">Login/Signup</a>
                     </li>
                     <li class="nav-item dropdown mt-n1">
@@ -71,18 +88,67 @@
         </nav>
     </header>
 
-    <!-- || Thankyou Note -->
+    <!-- || ABOUT Content -->
     <main>
-        <div class="container my-5 text-center">
-            <img src="images/right.png" alt="" width="70px" height="auto" class="d-block mx-auto" />
-            <p class="display-4 mt-3">Thank You!</p>
-            <p class="text-dark">Your Order is Successfully Placed</p>
+        <div class="container-fluid">
+            <div class="row" style="background: radial-gradient(#ffffff, #e0f2f1);">
+                <!-- Textual Content -->
+                <div class="col-lg-7 px-5 py-4 order-lg-1 order-2">
+                    <h3 class="section_head">About Us</h3>
 
-            <div class="">
-                <a href="./products.html" class="btn btn-info mt-3">Back To Shop</a>
+                    <p class="mt-5 text-muted text-lg-left text-center px-lg-4" style="line-height: 2;">E-commerce
+                        (electronic commerce) is the activity of electronically buying or selling of products on online
+                        services or over the Internet. Electronic commerce draws on technologies such as mobile
+                        commerce, electronic funds transfer, supply chain management, Internet marketing, online
+                        transaction processing, electronic data interchange (EDI), inventory management systems, and
+                        automated data collection systems. E-commerce is in turn driven by the technological advances of
+                        the semiconductor industry, and is the largest sector of the electronics industry.</p>
+                </div>
+
+                <!-- Banner -->
+                <div class="col-lg-5 col-sm-8 col-10 offset-lg-0 offset-sm-2 offset-1 p-5 order-lg-2 order-1">
+                    <img src="images/madeinindia.png" class="about_image" alt="Main Image" />
+                </div>
             </div>
         </div>
     </main>
+
+    <!-- || OUR TEAM -->
+    <section>
+        <div class="container my-5 our_team products_section">
+            <div class="d-block mb-5 mx-auto">
+                <p class="section_head">Our TEAM</p>
+            </div>
+
+            <div class="row">
+
+                <!-- Rishabh Soni -->
+                <div class="col-lg-3 col-md-4 col-sm-6 px-4 mt-3">
+                    <img src="images/team/Rishabh_Soni .jpg" alt="Rishabh Soni" />
+                    <p class="pt-3 font-weight-bolder text-center text-muted">Rishabh Soni</p>
+                </div>
+
+                <!-- Rishi Soni -->
+                <div class="col-lg-3 col-md-4 col-sm-6 px-4 mt-3">
+                    <img src="images/team/Rishi_Soni.jpg" alt="Rishi Soni" />
+                    <p class="pt-3 font-weight-bolder text-center text-muted">Rishi Soni</p>
+                </div>
+
+                <!-- Rishabh Vyas -->
+                <div class="col-lg-3 col-md-4 col-sm-6 px-4 mt-3">
+                    <img src="images/team/Rishabh_Vyas.jpg" alt="Rishabh Vyas" />
+                    <p class="pt-3 font-weight-bolder text-center text-muted">Rishabh Vyas</p>
+                </div>
+
+                <!-- Rahul Upadhyay -->
+                <div class="col-lg-3 col-md-4 col-sm-6 px-4 mt-3">
+                    <img src="images/team/Rahul_Upadhyay.jpeg" alt="Rahul Upadhyay" />
+                    <p class="pt-3 font-weight-bolder text-center text-muted">Rahul Upadhyay</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- || Footer -->
     <footer>
