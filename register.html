@@ -16,7 +16,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <title>All Products - Indian Product | Vocal for Local</title>
-    
+
     <link rel="stylesheet" href="css/register.css" />
     <link rel="stylesheet" href="css/new_style.css" />
 </head>
@@ -28,66 +28,108 @@
     </div>
 
     <!-- Login Section -->
-    <div class="login-section" id="login_section" style="display: block;">
-        <h6 class="login-signup-heading">Log In</h6>
-        <p class="login-signup-sub-heading">New to this site? <a href="#" onclick="switchToSignup()">Sign Up</a></p>
+    <div class="container">
+        <div class="login-section" id="login_section" style="display: block;">
+            <h6 class="login-signup-heading">Log In</h6>
+            <p class="login-signup-sub-heading">New to this site? <a href="#" onclick="switchToSignup()">Sign Up</a></p>
 
-        <form action="#" name="login_form" class="login-form">
-            <div class="form-group">
-                <input type="tel" name="login_mobile_number" id="login_mobile_number" placeholder="10 Digit Mobile Number..."
-                    pattern="[0-9]{10}" required />
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 offset-lg-4 offset-md-3 offset-sm-2">
+                    <form action="#" name="login_form" class="login-form">
+                        <div class="form-group">
+                            <input type="tel" name="login_mobile_number" id="login_mobile_number"
+                                placeholder="10 Digit Mobile Number..." pattern="[0-9]{10}" class="form-control"
+                                onblur="validateContact(this.id)" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="login_password" class="form-control" id="login_password"
+                                minlength="6" placeholder="Password..." required />
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block login-signup-button">Log In</button>
+                        </div>
+                        <div class="form-group business_acc_section">
+                            <a href="business_signup.html" class="btn btn-block business_acc_btn">Signup for
+                                Business</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="password" name="login_password" id="login_password" minlength="6" placeholder="Password..."
-                    required />
-            </div>
-            <div class="form-group">
-                <a href="#" class="forget-password">Forget Password?</a>
-                <button type="submit" class="login-signup-button">Log In</button>
-            </div>
-            <div class="form-group business_acc_section">
-                <a href="business_signup.html" class="business_acc_btn">Signup for Business</a>
-            </div>
-        </form>
+        </div>
     </div>
 
     <!-- Signup Section -->
-    <div class="signup-section" id="signup_section" style="display: none;">
-        <h6 class="login-signup-heading">Sign Up</h6>
-        <p class="login-signup-sub-heading">Already a Member? <a href="#" onclick="switchToLogin()">Log In</a></p>
+    <div class="container">
+        <div class="signup-section" id="signup_section" style="display: none;">
+            <h6 class="login-signup-heading">Sign Up</h6>
+            <p class="login-signup-sub-heading">Already a Member? <a href="#" onclick="switchToLogin()">Log In</a></p>
 
-        <form action="#" name="signup_form" class="signup_form">
-            <div class="form-group">
-                <input type="text" name="signup_username" id="signup_username" placeholder="Your Name..." required />
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 offset-lg-4 offset-md-3 offset-sm-2">
+                    <form action="#" name="signup_form" class="signup_form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="signup_username" id="signup_username"
+                                placeholder="Your Name..." required />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="signup_mobile_number" id="signup_mobile_number"
+                                placeholder="10 Digit Mobile Number..." onblur="validateContact(this.id)" value=""
+                                pattern="[0-9]{10}" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="signup_email_address"
+                                id="signup_email_address" placeholder="Email Address..." required />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="signup_password" id="signup_password"
+                                placeholder="Password..." minlength="6" required />
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block login-signup-button">Sign Up</button>
+                        </div>
+                        <div class="form-group business_acc_section">
+                            <a href="business_signup.html" class="btn btn-block business_acc_btn">Signup for
+                                Business</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="tel" name="signup_mobile_number" id="signup_mobile_number"
-                    placeholder="10 Digit Mobile Number..." value="" pattern="[0-9]{10}" required />
-            </div>
-            <div class="form-group">
-                <input type="email" name="signup_email_address" id="signup_email_address" placeholder="Email Address..."
-                    required />
-            </div>
-            <div class="form-group">
-                <input type="password" name="signup_password" id="signup_password" placeholder="Password..."
-                    minlength="6" required />
-            </div>
-            <div class="form-group">
-                <button type="submit" class="login-signup-button">Sign Up</button>
-            </div>
-            <div class="form-group business_acc_section">
-                <a href="business_signup.html" class="business_acc_btn">Signup for Business</a>
-            </div>
-        </form>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
     <script src="main.js"></script>
 
+    <script>
+        function validateContact(contactId) {
+
+            let contact = document.getElementById(contactId).value;
+            contact = contact.toString();
+
+            if (contact.length == 10) {
+                if (parseInt(contact[0]) >= 6) {
+                    return true;
+                }
+                else {
+                    alert("Indian Phone Number's First Digit [6,9]");
+                } 
+            }
+            else {
+                alert("Phone Number Must be of 10 Digits");
+            }
+        }
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
 </body>
 
